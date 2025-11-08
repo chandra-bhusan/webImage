@@ -1,0 +1,72 @@
+================================================================================
+  SPRING BOOT REST APPLICATION DEMONSTRATION
+  Student USN: [USN Number to be added]
+================================================================================
+
+PROJECT STRUCTURE:
+------------------
+spring-boot-app/
+├── pom.xml                                 (Maven dependencies: Web, DevTools)
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/springbootapp/
+│   │   │   ├── SpringBootAppApplication.java    (Main Application)
+│   │   │   └── WelcomeController.java           (REST Controller)
+│   │   └── resources/
+│   │       └── application.properties
+│   └── test/
+│       └── java/com/example/springbootapp/
+│           └── WelcomeControllerTest.java
+
+MAVEN DEPENDENCIES (from pom.xml):
+------------------------------------
+1. spring-boot-starter-web      - For REST API support
+2. spring-boot-devtools          - For development features
+3. spring-boot-starter-test     - For testing
+
+BUILD STATUS:
+-------------
+✓ BUILD SUCCESS
+  Total time: 43.266 s
+  
+TEST RESULTS:
+-------------
+✓ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+  All tests passed successfully!
+
+APPLICATION STARTUP:
+--------------------
+✓ Tomcat started on port 8080 (http)
+✓ Started SpringBootAppApplication in 1.192 seconds
+
+REST ENDPOINT TEST:
+-------------------
+URL: http://localhost:8080/welcome
+Method: GET
+Status: HTTP/1.1 200 OK
+Content-Type: text/plain;charset=UTF-8
+
+Response:
+"Welcome to Spring Boot REST Application! This application was created by a student with USN for demonstration purposes."
+
+VERIFICATION COMMAND:
+---------------------
+$ curl http://localhost:8080/welcome
+
+Output:
+Welcome to Spring Boot REST Application! This application was created by a student with USN for demonstration purposes.
+
+================================================================================
+  APPLICATION SUCCESSFULLY BUILT AND RUNNING!
+================================================================================
+
+Key Features Implemented:
+✓ Spring Boot 3.2.0 Application
+✓ Maven Project Structure
+✓ Web Dependency for REST API
+✓ DevTools Dependency for Development
+✓ /welcome REST Endpoint (GET)
+✓ Unit Tests with MockMvc
+✓ All Tests Passing
+✓ Application Running on Port 8080
+
